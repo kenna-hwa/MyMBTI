@@ -54,7 +54,6 @@ function goNext(qIdx){
   var status = document.querySelector('.statusBar');
   status.style.width = (100/endPoint) * (qIdx+1) + '%';
 }
-
 function begin(){
   main.style.WebkitAnimation = "fadeOut 1s";
   main.style.animation = "fadeOut 1s";
@@ -65,7 +64,5 @@ function begin(){
       main.style.display = "none";
       qna.style.display = "block"
     }, 450)
-    let qIdx = 0;
-    goNext(qIdx);
   }, 450);
 }
